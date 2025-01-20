@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+    <link rel="stylesheet" href="src/style.css">
+  </head>
+  <body>
+    <div class="pop_up" id="pop_up">
+      <div class="pop_up_container" id="pop_up_container">
+        <div class="pop_up_body" id="pop_up_body">
+          <p>Registration</p>
+          <form action="">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Telephone">
+            <br>
+            <button class="button_2" 
+            style="background-color: #008cff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">Submit your application</button>
+          </form>
+          <div class="pop_up_close" id="pop_up_close">&#10006;</div>
+        </div>
+      </div>
+    </div>
+    <div id="customAlert" class="custom-alert">
+      <div class="custom-alert-content">
+        <span class="custom-alert-message"></span>
+        <button class="custom-alert-close">Close</button>
+      </div>
+    </div>
+
+    <div id="registrationMessage" style="display: none;"></div>
+
+    <div class="app">
+      <header>
+        <form action="/search" method="get">
+            <input type="text" name="search" placeholder="Поиск...">
+            <button type="submit">Найти</button>
+        </form>
+    </header>
+    </div>
+    <script type="module" src="src/main.ts"></script>
+  </body>
+</html>
